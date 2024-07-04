@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Forex Insights</title>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <header class="bg-dark text-white text-center py-3 mt-auto">
+        <h1>Forex Insights</h1>
+        <div class="col-md-6">
+            <ul class="list-inline">
+                <li class="list-inline-item"><a href="index.html">Home</a></li>
+                <li class="list-inline-item"><a href="about.html">About</a></li>
+                <li class="list-inline-item"><a href="education.html">Educational</a></li>
+            </ul>
+        </div>
+
+    </header>
+    <div id="forex-basics-section" class="container mt-4">
+        <h2>Forex Market Basics</h2>
+        <p>The foreign exchange market, commonly known as the Forex market, is the largest financial market in the world. Unlike stock or bond exchanges, which operate during normal business hours, the Forex market is open 24 hours a day, five days a week, and is driven by the simultaneous trading of currencies by banks, commercial businesses, central banks, investment management firms, and speculators worldwide. The primary goal of traders in the Forex market is to profit from fluctuations in currency exchange rates.</p>
+        <p>Currencies are traded in pairs, with one currency being bought while another is sold simultaneously. For example, in a EUR/USD pair, the euro (EUR) is bought while U.S. dollars (USD) are sold. The exchange rate between two currencies is determined by supply and demand dynamics, influenced by factors such as interest rates, inflation, political stability, and economic growth among other macroeconomic indicators.</p>
+    </div>
+            <h1 class="text-center">Currency Converter</h1>
+            <form id="converter-form" class="mt-4">
+                <div class="form-row">
+                    <div class="form-group col-md-6">
+                        <label for="amount">Amount</label>
+                        <input type="number" class="form-control" id="amount" placeholder="Enter amount">
+                    </div>
+                    <div class="form-group col-md-3">
+                        <label for="from-currency">From</label>
+                        <select class="form-control" id="from-currency"></select>
+                    </div>
+                    <div class="form-group col-md-3">
+                        <label for="to-currency">To</label>
+                        <select class="form-control" id="to-currency"></select>
+                    </div>
+                </div>
+                <button type="submit" class="btn btn-primary">Convert</button>
+            </form>
+            <div id="conversion-result" class="mt-4"></div>
+        </div>
+    
+        <div id="news" class="container mt-4">
+            <h2 class="text-center">Financial News</h2>
+            <div id="news-filter" class="mb-4">
+                <button class="btn btn-secondary" onclick="filterNews('prev')">Previous</button>
+                <button class="btn btn-secondary" onclick="filterNews('next')">Next</button>
+            </div>
+            <div id="news-articles" class="row mt-4"></div>
+        </div>
+    </main>    
+
+    <footer class="bg-dark text-white text-center py-3 mt-auto">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-6">
+                    <p>&copy; 2024 Forex Insights. All Rights Reserved.</p>
+                </div>
+                <div class="col-md-6">
+                    <ul class="list-inline">
+                        <li class="list-inline-item"><a href="#">Privacy Policy</a></li>
+                        <li class="list-inline-item"><a href="#">Terms of Service</a></li>
+                        <li class="list-inline-item"><a href="#">Contact Us</a></li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <script src="https://code.jquery.com/jquery-3.5.1.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.2/dist/umd/popper.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+    <script src="scripts.js"></script>
+</body>
+</html>

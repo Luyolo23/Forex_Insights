@@ -1,0 +1,48 @@
+
+html, body {
+  height: 100%;
+  margin: 0;
+}
+#currencyChart {
+  width: 400px;
+  height: 200px;
+}
+#currency-search.form-control {
+  width: auto; /* Adjust as needed */
+  max-width: 300px; /* Example max-width */
+}
+#currency-filter.form-control{
+  display: center;
+  width: auto;
+  max-width: 300px;
+}
+.btn-primary{
+  margin-left: 5em;
+}
+body {
+  display: flex;
+  flex-direction: column;
+}
+
+header {
+  flex-shrink: 0; 
+}
+
+main {
+  flex-grow: 1; 
+}
+
+footer {
+  flex-shrink: 0; 
+  mt-auto: 0; 
+}
+
+.form-row{
+  margin-left: 5em;
+}
+
+#section1{
+  margin: 15px 15px;
+  border-color: #333333;
+  border-radius: 2em;
+}
