@@ -1,4 +1,3 @@
-// scripts.js
 document.addEventListener('DOMContentLoaded', () => {
     let allRates;
     let selectedCurrencies = [];
@@ -36,7 +35,7 @@ document.addEventListener('DOMContentLoaded', () => {
     }
     
     function fetchNews(page = 1) {
-        fetch(`https://newsapi.org/v2/top-headlines?category=business&page=${page}&pageSize=3&apiKey=68e179340d3047f28a8a7b50bd9271e9&language=en`)
+        fetch(`https://cors-anywhere.herokuapp.com/https://newsapi.org/v2/top-headlines?category=business&page=${page}&pageSize=3&apiKey=68e179340d3047f28a8a7b50bd9271e9&language=en`)
             .then(response => response.json())
             .then(data => {
                 displayNews(data.articles);
